@@ -1,4 +1,4 @@
-# 科协暑培(网站部分)学习型工程
+# 科协暑培（网站部分）学习型工程
 
 ### 介绍
 
@@ -16,27 +16,27 @@
 
 ​ 以下是各讲对应的演示内容及其在整个工程中的作用：
 
-1. `HTML&CSS`
+1. `HTML & CSS`
 
    HTML、CSS、JS 是网页三大语言，是网页的基础和本质。其中只需 HTML 和 CSS 文件就已经可以构建好看的静态网页了。我们在本节中将“画”出整个应用的首页、主页和“关于这个工程”页，并用简单的素材美化这些页面。在此过程中，我们希望同学们感受到“原来网页就是这么简单的东西“。
 
-2. `JS&TS`
+2. `JS & TS`
 
    JS 是让网页动起来的关键，也是一种通用编程语言。这里的”动“不是移动，而是”动态“——不同的情况显示不同的内容。在本节中，我们对之前的页面施加一些魔法，使网页的背景可以随机变化、菜单内容可以展开收缩、表单提交后数据可以保存到文件中以备后用。此外，我们还会介绍 TS——带有类型系统的 JS。
 
-3. `DataBase (SQL&GraphQL)`
+3. `DataBase (SQL & GraphQL)`
 
    当数据的关系复杂度、规模、并发需求提高到用简单文件保存已不能满足，数据库便应运而生，并成为互联网中最重要的基础设施。在本节中，我们将对用户、会议二个对象和它们之间的关系进行数据库设计和创建（使用 SQL），并使用 Hasura 和 GraphQL 进行数据访存，从而为用户创建和登录、会议创建和加入功能作铺垫。
 
-4. `Backend (NodeJS&Express)`
+4. `Backend (NodeJS & Express)`
 
    在浏览器的操作是受限的、在客户端的身份是可伪造的，因此我们需要在服务器端完成诸如复杂计算、身份验证等功能——即后端。NodeJS 和 Express 是后端的一种实现方式，其中 NodeJS 使 JS 脱离浏览器环境独立运行成为可能。我们在本节中将配合数据库构建完整的用户系统，并探索邮件验证功能。
 
-5. `Frontend (React&Webpack)`
+5. `Frontend (React & Webpack)`
 
-   使用纯 HTML、CSS、JS 搭建网页，我们面临两个挑战：(1) 如果一次只改变部分（但很多）的页面元素，无论是用 JS 改 DOM 树还是重新写一个 HTML 都太费力 (2) 相同的页面元素组合只能复制粘贴，无法简单复用。为此，声明式、组件化的前端框架出现了。在本节中，我们会使用前端框架之一的 React 实现大部分的会议趣味功能，完成所有页面搭建。
+   使用纯 HTML、CSS、JS 搭建网页，我们面临两个挑战：(1) 如果一次只改变部分（但很多）的页面元素，无论是用 JS 改 DOM 树还是重新写一个 HTML 都太费力； (2) 相同的页面元素组合只能复制粘贴，无法简单复用。为此，声明式、组件化的前端框架出现了。在本节中，我们会使用前端框架之一的 React 实现大部分的会议趣味功能，完成所有页面搭建。
 
-6. `Deployment (CI/CD&Server)`
+6. `Deployment (CI/CD & Server)`
 
    在前 5 节中，我们已经在本地完成了网站的全部开发工作，但如何让世界上所有人都能 24 小时访问你的网站呢？在本节，我们将运用 Github CI/CD 来构建前端和后端的 Docker 镜像，使用 Github Pages 来托管前端页面，并尝试自己购买一个云服务器来提供网站的后端和数据库服务。
 
@@ -64,13 +64,13 @@
 
 ![clone_repo](./assets/clone_repo.png)
 
-在本地文件夹中，用任意终端（可右键打开）运行
+在本地文件夹中，用任意终端（可右键打开）运行：
 
 ```bash
 git clone <先前复制的仓库URI>
 ```
 
-克隆应当在几秒内完成，并在当前文件夹中创建一个名为`web-workshop`的子文件夹（即本工程）。
+克隆应当在几秒内完成，并在当前文件夹中创建一个名为 `web-workshop` 的子文件夹（即本工程）。
 
 若出现网络问题，请自行根据现象/报错搜索解决方案，也可在暑培群中反馈。
 
@@ -82,7 +82,7 @@ git clone <先前复制的仓库URI>
 - `/assets`：说明文档中插入的图片素材，无需关心
 - `/backend`：后端代码存放位置，Backend 一节中会用到
 - `/database`：数据库相关代码存放位置，Database 一节中会用到
-- `/frontend`：前端代码存放位置，HTML&CSS、JS&TS、Frontend 三节中会用到
+- `/frontend`：前端代码存放位置，HTML & CSS、JS & TS、Frontend 三节中会用到
 - `/server`：部署云服务相关配置文件，在 Deployment 一节中会用到
 - `/tutorials`：**每一节演示内容和作业的说明**，以及授课的讲义
 
@@ -90,36 +90,36 @@ git clone <先前复制的仓库URI>
 
 > 注：以下 git 指令都可以使用 vscode 图形化界面操作替代，有需要的请自行摸索
 
-1. 切换到本节演示内容对应的分支（本地只有主分支是正常的，请在 Github 云端仓库查看所需的分支名）
+1. 切换到本节演示内容对应的分支（本地只有主分支是正常的，请在 Github 云端仓库查看所需的分支名）：
 
    ```bash
    git checkout "<branch-name>"
    ```
 
-2. 请先阅读`/tutorials/<branch-name>.md`，确保你已经正确地配置了环境
+2. 请先阅读 `/tutorials/<branch-name>.md`，确保你已经正确地配置了环境
 
-3. 分支上已有了一些提交，每个提交都对应新增的功能，你可以在`/tutorials/<branch-name>.md`中找到说明。若要查看运行每次提交的修改内容和实际效果，请找到提交对应的 Hash 值并运行以下命令
+3. 分支上已有了一些提交，每个提交都对应新增的功能，你可以在 `/tutorials/<branch-name>.md` 中找到说明。若要查看运行每次提交的修改内容和实际效果，请找到提交对应的 hash 值并运行以下命令：
 
    ```bash
    git checkout <commit-hash>
    ```
 
-4. 在你对代码做任何修改前，请确保你已经切换回到分支的最新提交
+4. 在你对代码做任何修改前，请确保你已经切换回到分支的最新提交：
 
    ```bash
    git checkout "<branch-name>"
    ```
 
-5. 你可以根据`/tutorials/<branch-name>.md`中的作业要求编码代码，或自由地修改对应代码来探索效果
+5. 你可以根据 `/tutorials/<branch-name>.md` 中的作业要求编码代码，或自由地修改对应代码来探索效果
 
-6. 在修改完成后，记得保存并提交你的修改，建议使用规范化地提交命名
+6. 在修改完成后，记得保存并提交你的修改，建议使用 [规范化地提交命名](https://www.conventionalcommits.org/zh-hans/)：
 
    ```bash
    git add <files>
    git commit -m "<commit-message>"
    ```
 
-7. 为了与之前几节中你的修改内容配合起来，需要将新增的提交合并到主分支
+7. 为了与之前几节中你的修改内容配合起来，需要将新增的提交合并到主分支：
 
    ```bash
    git checkout main
@@ -133,38 +133,52 @@ git clone <先前复制的仓库URI>
    ```
 
 ### 作业提交
+
 每一讲的作业提交采用如下流程：
 - 本地修改对应分支
 - 提交修改到对应分支
 - 向本仓库对应分支提交PR
-- 关联PR到对应Issue
+- 关联 PR 到对应 issue
 - 查看作业批改结果
+
 ##### 本地修改对应分支
-fork本仓库所有分支后，根据[Issue](https://github.com/eesast/web-workshop/issues)对应讲作业要求，在本地切换到对应分支进行修改
+
+Fork 本仓库所有分支后，根据 [Issue](https://github.com/eesast/web-workshop/issues) 对应讲作业要求，在本地切换到对应分支进行修改：
+
 ```
 git checkout "01-HTML&CSS"
 ```
+
 ##### 提交修改到对应分支
-完成修改后，将改动提交到本地并推送到云端 Fork 仓库
+
+完成修改后，将改动提交到本地并推送到云端 fork 仓库：
+
 ```
 git push origin "01-HTML&CSS"
 ```
-##### 向本仓库对应分支提交PR
-打开在 GitHub 上 Fork 的仓库页面后，切换到刚刚推送的 对应分支（如 lesson1）
 
-点击 "Compare & pull request" 按钮，并在 PR 创建页面填写相关信息
-##### 关联PR到对应Issue
-在PR模板填写界面，需手动关联PR到对应Issue
+##### 向本仓库对应分支提交 PR
 
-你可以在PR正文中手动关联对应Issue，方法是添加#ISSUE-NUMBER到正文后。例如，需要链接的Issue对应的id是4，则添加一行#4
+打开在 GitHub 上 fork 的仓库页面后，切换到刚刚推送的 对应分支（如 lesson1）
 
-你也可以在PR编辑界面点击右上方的'Reference'，选择需要链接的PR，最终效果与上述方法相同
+点击“Compare & pull request”按钮，并在 PR 创建页面填写相关信息
+
+##### 关联 PR 到对应 issue
+
+在 PR 模板填写界面，需手动关联 PR 到对应 issue
+
+你可以在 PR 正文中手动关联对应 issue，方法是添加 `#ISSUE-NUMBER` 到正文后。例如，需要链接的 issue 对应的 id 是 4，则添加一行 `#4`
+
+你也可以在 PR 编辑界面点击右上方的“Reference”，选择需要链接的 PR，最终效果与上述方法相同
+
 <img width="837" height="369" alt="image" src="https://github.com/user-attachments/assets/1b7ac4eb-ae95-426e-b17c-cc0f1ce1e66d" />
 
-[示例PR](https://github.com/eesast/web-workshop/pull/12)
+[示例 PR](https://github.com/eesast/web-workshop/pull/12)
 
-关联完成后，提交PR，则作业提交完毕
+关联完成后，提交 PR，则作业提交完毕
+
 ##### 查看作业批改结果
+
 作业由讲师批改后，对应 PR 会被打上标签：
 - accepted ✅：作业通过，PR 会被关闭。
 - require revision 🔄：需要修改，PR 保持 open 状态。
