@@ -1,0 +1,11 @@
+{
+  "name": "web-workshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/eesast/web-workshop.git",
+  "author": "like017 <like01017@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
